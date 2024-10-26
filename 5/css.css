@@ -1,0 +1,75 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 200px;
+    background-color: rgb(224, 162, 255);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 20px 0px;
+    justify-content: space-around;
+    border-radius: 60px;
+    align-items: center;
+}
+
+.request {
+    margin: 0;
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+}
+
+.firstInput, .secondInput {
+    width: 40%;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    font-size: 30px;
+    color: rgb(101 0 125);
+    text-align: center;
+}
+
+.button {
+    font-style: italic;
+    width: 40%;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255 255 255);
+    box-shadow: 0 0 0px 20px rgb(201 0 255) inset, 0 0;
+    color: white;
+    transition: .15s ease-in-out;
+}
+
+.button:hover, .button:active {
+    box-shadow: 0 0 10px 0 rgb(201 0 255) inset, 0 0 10px 4px rgb(201 0 255);
+    color: rgb(201 0 255);
+    transform: scale(1.1);
+}
+
+.button:disabled, .button:disabled:hover{
+    transform: none;
+    color: white;
+    background-color: rgb(205 205 205);
+    box-shadow: 0 0 0px rgb(137 137 137);
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: auto;
+    height: 200px;
+    margin: 10px;
+}
+
+::placeholder {
+    font-style: italic;
+    font-size: 20px;
+    align-items: center;
+    color: rgb(205 205 205);
+}
